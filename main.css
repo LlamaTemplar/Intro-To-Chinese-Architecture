@@ -72,17 +72,27 @@ body {
   color: #efefef;
 }
 
+h1,h2,h3,a
+{
+  font-family: 'Lora', serif;
+}
+p
+{
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
 .content {
   background-color: #2b3139;
   margin: 150px auto 100px auto;
-  width: 60%;
+  max-width: 900px;
   min-height: 600px;
   overflow: hidden;
   position: relative;
 }
 
-.image.main {
-  background-image: url('images/img2.jpg');
+.mainimg {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -93,29 +103,53 @@ body {
   border-width: 0px 0px 4px 0px;
 }
 
-.image.main img {
-  background-size: contain;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
 .imagecontainer
 {
   margin: auto;
-  padding: 20px;
+  /* padding: 40px; */
 }
 
-.image
+.image.img1
 {
-  background-image: url('images/img1.jpg');
+  background-image: url('images/img7.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
   height: 0;
   padding-top: 56.25%;
 }
+
+.image.img2
+{
+  background-image: url('images/s-img8.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+
+.imgrow
+{
+  display: flex;
+}
+
+.imgcolumn, .textcolumn
+{
+  padding: 5px;
+  flex: 33.33%
+}
+
+.imgcolumn img
+{
+  height: 240px;
+}
+
+.textcolumn p
+{
+  margin: 0px;
+}
+
 
 .imagetext
 {
@@ -124,10 +158,25 @@ body {
 }
 
 .text {
-  padding: 20px;
+  padding: 40px;
 
 }
 
 .text h1 {
   margin: 0;
+}
+
+/*IMAGES*/
+.gableimg, .hipimg, .halfgablehalfhipimg, .smallimg
+{
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 75%;
+}
+
+.gableimg
+{
+
 }
