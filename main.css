@@ -13,8 +13,14 @@
   color: white;
 }
 
+.headercontainer
+{
+  max-width: 900px;
+  margin: auto;
+}
+
 .container {
-  max-width: 640px;
+  max-width: 500px;
   padding: 0;
   margin: 0;
   height: 60px;
@@ -53,10 +59,14 @@
   font-weight: bold;
 }
 
-ul, li {
+ul {
   list-style-type: none;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
+}
+
+li{
+  margin: 0 0 0 40px;
 }
 
 a {
@@ -85,11 +95,20 @@ p
 
 .content {
   background-color: #2b3139;
-  margin: 150px auto 100px auto;
+  margin: 150px auto 0 auto;
   max-width: 900px;
   min-height: 600px;
   overflow: hidden;
   position: relative;
+}
+
+.content.citation
+{
+  margin: 0 auto 50px auto;
+  min-height: 200px;
+  border-style: solid;
+  border-color: black;
+  border-width: 4px 0px 0px 0px;
 }
 
 .mainimg {
@@ -106,6 +125,7 @@ p
 .imagecontainer
 {
   margin: auto;
+
   /* padding: 40px; */
 }
 
@@ -150,11 +170,10 @@ p
   margin: 0px;
 }
 
-
-.imagetext
+.imagetext p
 {
   font-size: 12px;
-  text-align: center;
+  line-height: 15px;
 }
 
 .text {
